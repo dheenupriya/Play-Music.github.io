@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .main{
+      padding: 40px 10px;
+    }
+    .col-md-3{
+      margin-bottom: 20px;
+    }
+    .album-poster{
+      position: relative;
+      display: inline-block;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 15px 35px #3d2173a1;
+      transition: all ease 0.4s;
+    }
+    .album-poster:hover{
+      box-shadow: none;
+      transform: scale(0.98) translateY(5px);
+    }
+  </style>
+  <script>
+    var aAudio = new Audio('songs/queenofhearts.mp3');
+    var bAudio = new Audio('songs/athousandyears.mp3');
+    function myAudioFunction(letter) {
+        if(letter == 'A') {
+            aAudio.play();
+        } 
+        else if(letter == 'B') {
+          aAudio.play();
+        }
+        
+    }
+  </script>
+</head>
+
+<body style="background-color: #080a0b;">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img id="image" src="logo.png" width="55" height="50" alt=""><strong
+        style="font-family: 'Brush Script MT', cursive; font-size: 30px; position:relative; top:2px;"></style>&nbsp&nbspPlayMusic</strong><br />
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#" style="font-family: Impact, Haettenschweiler, sans-serif; font-size:20px; color:dimgrey;">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="login.html" style="position: relative; left:900px; top:-2px; font-family: Impact, Haettenschweiler, sans-serif; font-size:20px; color:dimgrey;">Login <span class="sr-only"></span></a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="signup.html" style="position: relative; right:-450px; top:-2px; font-family: Impact, Haettenschweiler, sans-serif; font-size:20px; color:dimgrey;">Sign Up <span class="sr-only"></span></a>
+        </li>
+      </ul>
+
+
+    </div>
+  </nav>
+
+  <br>
+  <div class="main">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 style="font-family: Comic Sans MS; color: rgb(104, 252, 124);">Tamil Songs</h1><br>
+        </div>
+        <br>
+        <br>
+        <div class="col-md-3">
+          <a href="song description/pallikoodam.html" album-poster"> 
+            <img
+              src="https://images.pexels.com/photos/257904/pexels-photo-257904.jpeg?cs=srgb&dl=pexels-pixabay-257904.jpg&fm=jpg"
+              alt="image" id="song">
+          </a>
+          <h4 id="font" style="position: relative; left: 35px;">Pallikoodam</h4>
+        </div>
+        <div class="col-md-3">
+          <a href="song description/thallipogathey.html" class="album-poster">
+            <img
+              src="https://images.pexels.com/photos/934067/pexels-photo-934067.jpeg?cs=srgb&dl=pexels-ylanite-koppens-934067.jpg&fm=jpg"
+              alt="image" id="song">
+          </a>
+          <h4 id="font" style="position: relative; left: 25px;">Thalli Pogathey</h4>
+        </div>
+        <div class="col-md-3">
+          <a href="song description/anthakanna.html" class="album-poster">;
+            <img
+              src="https://images.pexels.com/photos/668295/pexels-photo-668295.jpeg?cs=srgb&dl=pexels-tim-mossholder-668295.jpg&fm=jpg"
+              alt="image" id="song">
+          </a>
+          <h4 id="font" style="position: relative; left: 35px;">Antha Kanna</h4>
+        </div>
+        <div class="col-md-3">
+          <a href="song description/vaathicoming.html" class="album-poster">
+            <img
+              src="https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?cs=srgb&dl=pexels-vishnu-r-nair-1105666.jpg&fm=jpg"
+              alt="image" id="song">
+          </a>
+          <h4 id="font" style="position: relative; left: 35px;">Vaathi Coming</h4>
+        </div>
+        <div class="col-md-3">
+          <a href="song description/kuttypattas.html" class="album-poster">
+            <img
+              src="https://images.pexels.com/photos/374703/pexels-photo-374703.jpeg?cs=srgb&dl=pexels-burst-374703.jpg&fm=jpg"
+              alt="image" id="song">
+          </a>
+          <h4 id="font" style="position: relative; left: 40px;">Kutty Pattas</h4>
+        </div>
+        <div class="col-md-3">
+          <a href="song description/thangamey.html" class="album-poster">
+            <img
+              src="https://images.pexels.com/photos/6320/smartphone-vintage-technology-music.jpg?cs=srgb&dl=pexels-kaboompics-com-6320.jpg&fm=jpg"
+              alt="image" id="song">
+          </a>
+          <h4 id="font" style="position: relative; left: 30px;">Thangamey</h4>
+        </div>
+        <div class="col-md-3">
+          <a href="song description/askumaaro.html" class="album-poster">
+            <img
+              src="https://images.pexels.com/photos/3971985/pexels-photo-3971985.jpeg?cs=srgb&dl=pexels-elina-sazonova-3971985.jpg&fm=jpg"
+              alt="image" id="song">
+          </a>
+          <h4 id="font" style="position: relative; left: 45px;">Asku Maaro</h4>
+        </div>
+        <div class="col-md-3">
+          <a href="song description/senjitaley.html" class="album-poster">
+            <img
+              src="https://images.pexels.com/photos/1761362/pexels-photo-1761362.jpeg?cs=srgb&dl=pexels-ashutosh-sonwani-1761362.jpg&fm=jpg"
+              alt="image" id="song">
+          </a>
+          <h4 id="font" style="position: relative; left: 40px;">Senjitaley</h4>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-12">
+          <h1 id="font" style="color: rgb(104, 252, 124)">Telugu Songs</h1><br>
+        </div>
+        <div class="col-md-3">
+          <a href="song description/samajavaragamana.html" class="album-poster">
+            <img
+              src="https://images.pexels.com/photos/1540406/pexels-photo-1540406.jpeg?cs=srgb&dl=pexels-wendy-wei-1540406.jpg&fm=jpg"
+              alt="image" id="song">
+          </a>
+          <h4 id="font" style="position: relative; left: 1px;">Samajavaragamana</h4>
+        </div>
+        <div class="col-md-3">
+          <a href="song description/buttabomma.html" class="album-poster">
+            <img
+              src="https://images.pexels.com/photos/1876279/pexels-photo-1876279.jpeg?cs=srgb&dl=pexels-marcelo-chagas-1876279.jpg&fm=jpg"
+              alt="image" id="song">
+          </a>
+          <h4 id="font" style="position: relative; left: 30px;">Butta Bomma</h4>
+        </div>
+        <div class="col-md-3">
+          <a href="song description/ramuloramula.html" class="album-poster">
+            <img
+              src="https://images.pexels.com/photos/1370545/pexels-photo-1370545.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="image" id="song">
+          </a>
+          <h4 id="font" style="position: relative; left: 15px;">Ramuloo Ramulaa</h4>
+        </div>
+        <div class="col-md-3">
+          <a href="song description/hesocute.html" class="album-poster">
+            <img
+              src="https://images.pexels.com/photos/167491/pexels-photo-167491.jpeg?cs=srgb&dl=pexels-thibault-trillet-167491.jpg&fm=jpg"
+              alt="image" id="song">
+          </a>
+          <h4 id="font" style="position: relative; left: 30px;">He's So Cute</h4>
+        </div>
+        <div class="col-md-3">
+          <a href="song description/sarangadharia.html" class="album-poster">
+            <img
+              src="https://images.pexels.com/photos/89909/pexels-photo-89909.jpeg?cs=srgb&dl=pexels-keith-wako-89909.jpg&fm=jpg"
+              alt="image" id="song">
+          </a>
+          <h4 id="font" style="position: relative; left: 20px;">Saranga Dharia</h4>
+        </div>
+        <div class="col-md-3">
+          <a href="song description/okayokalokam.html" class="album-poster">
+            <img
+              src="https://images.pexels.com/photos/3971985/pexels-photo-3971985.jpeg?cs=srgb&dl=pexels-elina-sazonova-3971985.jpg&fm=jpg"
+              alt="image" id="song">
+          </a>
+          <h4 id="font" style="position: relative; left: 20px;">Okay Oke Lokam</h4>
+        </div>
+        <div class="col-md-3">
+          <a href="song description/undipova.html" class="album-poster">
+            <img
+              src="https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?cs=srgb&dl=pexels-wendy-wei-1190298.jpg&fm=jpg"
+              alt="image" id="song">
+          </a>
+          <h4 id="font" style="position: relative; left: 60px;">Undipova</h4>
+        </div>
+        <div class="col-md-3">
+          <a href="song description/yevevo.html" class="album-poster">
+            <img
+              src="https://images.pexels.com/photos/2147029/pexels-photo-2147029.jpeg?cs=srgb&dl=pexels-laura-stanley-2147029.jpg&fm=jpg"
+              alt="image" id="song">
+          </a>
+          <h4 id="font" style="position: relative; left: 70px;">Yevevo</h4>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-12">
+          <h1 id="font" style="color: rgb(104, 252, 124)">English Songs</h1><br>
+        </div>
+        <div class="col-md-3">
+          <a href="song description/queenofhearts.html" class="album-poster" ondblclick ="myAudioFunction('A');">
+            <img
+              src="https://images.pexels.com/photos/3944104/pexels-photo-3944104.jpeg?cs=srgb&dl=pexels-cottonbro-3944104.jpg&fm=jpg"
+              alt="image" id="song" />
+          </a>
+          <h4 id="font" style="position: relative; left: 1px;">Queen of Hearts</h4>
+        </div>
+        <div class="col-md-3">
+          <a href="song description/athousandyears.html" class="album-poster" ondblclick="myAudioFunction('B');">
+            <img
+              src="https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?cs=srgb&dl=pexels-wendy-wei-1190297.jpg&fm=jpg"
+              alt="image" id="song">
+          </a>
+          <h4 id="font" style="position: relative; left: 5px;">A Thousand Years</h4>
+        </div>
+        <div class="col-md-3">
+          <a href="song description/bymyside.html" class="album-poster">
+            <img
+              src="https://images.pexels.com/photos/290660/pexels-photo-290660.jpeg?cs=srgb&dl=pexels-pixabay-290660.jpg&fm=jpg"
+              alt="image" id="song">
+          </a>
+          <h4 id="font" style="position: relative; left: 40px;">By My Side</h4>
+        </div>
+        <div class="col-md-3">
+          <a href="song description/runfree.html" class="album-poster">
+            <img
+              src="https://images.pexels.com/photos/736843/pexels-photo-736843.jpeg?cs=srgb&dl=pexels-kat-jayne-736843.jpg&fm=jpg"
+              alt="image" id="song">
+          </a>
+          <h4 id="font" style="position: relative; left: 50px;">Run Free</h4>
+        </div>
+        <div class="col-md-3">
+          <a href="song description/playdate.html" class="album-poster">
+            <img
+              src="https://images.pexels.com/photos/60783/pexels-photo-60783.jpeg?cs=srgb&dl=pexels-caio-60783.jpg&fm=jpg"
+              alt="image" id="song">
+          </a>
+          <h4 id="font" style="position: relative; left: 50px;">Play Date</h4>
+        </div>
+        <div class="col-md-3">
+          <a href="song description/headinghome.html" class="album-poster">
+            <img
+              src="https://images.pexels.com/photos/111287/pexels-photo-111287.jpeg?cs=srgb&dl=pexels-clem-onojeghuo-111287.jpg&fm=jpg"
+              alt="image" id="song">
+          </a>
+          <h4 id="font" style="position: relative; left: 20px;">Heading Home</h4>
+        </div>
+        <div class="col-md-3">
+          <a href="song description/umbrella.html" class="album-poster">
+            <img
+              src="https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?cs=srgb&dl=pexels-thibault-trillet-167636.jpg&fm=jpg"
+              alt="image" id="song">
+          </a>
+          <h4 id="font" style="position: relative; left: 60px;">Umbrella</h4>
+        </div>
+        <div class="col-md-3">
+          <a href="song description/atmyworst.html" class="album-poster">
+            <img
+              src="https://images.pexels.com/photos/426976/pexels-photo-426976.jpeg?cs=srgb&dl=pexels-jacob-morch-426976.jpg&fm=jpg"
+              alt="image" id="song">
+          </a>
+          <h4 id="font" style="position: relative; left: 30px;">At My Worst</h4>
+        </div>
+      </div>
+      <br>
+      <br>
+      <img src="ashwin.jpg" alt="">
+    </div>
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+
+  <script>
+
+    <div id="aplayer"></div>
+
+    const ap = new APlayer({
+    container: document.getElementById('aplayer'),
+    listFolded: true,
+    audio: [{
+        name: 'Queen of Hearts',
+        artist: 'Starla Edney',
+        url: 'queenofhearts.mp3',
+        cover: 'https://images.pexels.com/photos/3944104/pexels-photo-3944104.jpeg?cs=srgb&dl=pexels-cottonbro-3944104.jpg&fm=jpg'
+    }]
+});
+  </script>
+</body>
+
+</html>
