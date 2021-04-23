@@ -9,6 +9,20 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <style>
+
+
+    .icon_bar{
+      position:fixed;
+      right:70px;
+      bottom:80px;
+      font-size: 80px;
+      cursor:pointer;
+      z-index:1000;
+      height:60px;
+      width:60px;
+      filter: grayscale(var(--value, 100%));
+      
+    }
     .main{
       padding: 40px 10px;
     }
@@ -28,22 +42,9 @@
       transform: scale(0.98) translateY(5px);
     }
   </style>
-  <script>
-    var aAudio = new Audio('songs/queenofhearts.mp3');
-    var bAudio = new Audio('songs/athousandyears.mp3');
-    function myAudioFunction(letter) {
-        if(letter == 'A') {
-            aAudio.play();
-        } 
-        else if(letter == 'B') {
-          aAudio.play();
-        }
-        
-    }
-  </script>
 </head>
 
-<body style="background-color: #080a0b;">
+<body style="background-color: black;">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">
       <img id="image" src="logo.png" width="55" height="50" alt=""><strong
@@ -57,16 +58,22 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#" style="font-family: Impact, Haettenschweiler, sans-serif; font-size:20px; color:dimgrey;">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="index.html" style="position: relative; top:4px; font-family: Georgia, 'Times New Roman', Times, serif; font-size:20px; color:dimgrey;">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="login.html" style="position: relative; left:900px; top:-2px; font-family: Impact, Haettenschweiler, sans-serif; font-size:20px; color:dimgrey;">Login <span class="sr-only"></span></a>
+          <a class="nav-link" href="http://127.0.0.1:5000/"><img src="song description/songs/images/chat.png" width="50px" heigth="50px" alt="" style="position: relative; left:710px; top:2px;"></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="login.php" style="position: relative; left:720px; top:6px; font-family: Georgia, 'Times New Roman', Times, serif; font-size:20px; color:dimgrey;">Login <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="register.php" style="position: relative; left:730px; top:6px; font-family: Georgia, 'Times New Roman', Times, serif; font-size:20px; color:dimgrey;">Signup <span class="sr-only"></span></a>
         </li>
       </ul>
 
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="signup.html" style="position: relative; right:-450px; top:-2px; font-family: Impact, Haettenschweiler, sans-serif; font-size:20px; color:dimgrey;">Sign Up <span class="sr-only"></span></a>
+          <a class="nav-link" href="logout.php" style="position: relative; right:-360px; top:2px; font-family: Georgia, 'Times New Roman', Times, serif; font-size:20px; color:dimgrey;">Logout<span class="sr-only"></span></a>
         </li>
       </ul>
 
@@ -75,6 +82,9 @@
   </nav>
 
   <br>
+  <div class="play" style="background-color: rgb(215, 228, 247); height: 70px;">
+    <button class="playall" style="font-size: 20px; font-family: Comic Sans MS;box-sizing: border-box; background-color: rgb(3, 43, 61); border-radius: 10px; position:relative; padding:10px 10px; left:600px; top:7px;"><a href="song description/playallsongs.html" style="color: #eff3f5; text-decoration: none;">Play All Songs</a></button>
+  </div>
   <div class="main">
     <div class="container">
       <div class="row">
@@ -84,7 +94,7 @@
         <br>
         <br>
         <div class="col-md-3">
-          <a href="song description/pallikoodam.html" album-poster"> 
+          <a href="song description/pallikoodam.html" class="album-poster"> 
             <img
               src="https://images.pexels.com/photos/257904/pexels-photo-257904.jpeg?cs=srgb&dl=pexels-pixabay-257904.jpg&fm=jpg"
               alt="image" id="song">
@@ -224,7 +234,7 @@
           <h1 id="font" style="color: rgb(104, 252, 124)">English Songs</h1><br>
         </div>
         <div class="col-md-3">
-          <a href="song description/queenofhearts.html" class="album-poster" ondblclick ="myAudioFunction('A');">
+          <a href="song description/queenofhearts.html" class="album-poster">
             <img
               src="https://images.pexels.com/photos/3944104/pexels-photo-3944104.jpeg?cs=srgb&dl=pexels-cottonbro-3944104.jpg&fm=jpg"
               alt="image" id="song" />
@@ -232,7 +242,7 @@
           <h4 id="font" style="position: relative; left: 1px;">Queen of Hearts</h4>
         </div>
         <div class="col-md-3">
-          <a href="song description/athousandyears.html" class="album-poster" ondblclick="myAudioFunction('B');">
+          <a href="song description/athousandyears.html" class="album-poster" >
             <img
               src="https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?cs=srgb&dl=pexels-wendy-wei-1190297.jpg&fm=jpg"
               alt="image" id="song">
@@ -290,12 +300,9 @@
       </div>
       <br>
       <br>
-      <img src="ashwin.jpg" alt="">
+      <img src="song description/songs/images/ashwin.jpg" alt="">
     </div>
   </div>
-
-
-
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
@@ -306,22 +313,6 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
 
-
-  <script>
-
-    <div id="aplayer"></div>
-
-    const ap = new APlayer({
-    container: document.getElementById('aplayer'),
-    listFolded: true,
-    audio: [{
-        name: 'Queen of Hearts',
-        artist: 'Starla Edney',
-        url: 'queenofhearts.mp3',
-        cover: 'https://images.pexels.com/photos/3944104/pexels-photo-3944104.jpeg?cs=srgb&dl=pexels-cottonbro-3944104.jpg&fm=jpg'
-    }]
-});
-  </script>
 </body>
 
 </html>

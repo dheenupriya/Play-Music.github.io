@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Play Music</title>
+  <!-- Load FontAwesome icons -->
+  <link rel="stylesheet"
+        href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+ 
+  <!-- Load the custom CSS style file -->
+  <link rel="stylesheet" type="text/css" href="playallsongs.css">
+  <link rel="stylesheet" type="text/css" href="sample.css">
+</head>
+<body>
+  <div class="stars">
+    <div class="twinkling">
+    <div class="clouds">
+  <div class="player">
+ 
+    <!-- Define the section for displaying details -->
+    <div class="details">
+      <div class="now-playing" style="font-family: Comic Sans MS; color:aliceblue;">PLAYING x OF y</div>
+      <div class="track-art" style="color:aliceblue;"></div>
+      <div class="track-name" style="color:aliceblue;">Track Name</div>
+      <div class="track-artist" style="color:aliceblue;">Track Artist</div>
+    </div>
+ 
+    <!-- Define the section for displaying track buttons -->
+    <div class="buttons">
+      <div class="prev-track" onclick="prevTrack()" style="color:aliceblue;">
+        <i class="fa fa-step-backward fa-2x" style="color:aliceblue;"></i>
+      </div>
+      <div class="playpause-track" onclick="playpauseTrack()" style="color:aliceblue;">
+        <i class="fa fa-play-circle fa-5x" style="color:aliceblue;"></i>
+      </div>
+      <div class="next-track" onclick="nextTrack()" style="color:aliceblue;">
+        <i class="fa fa-step-forward fa-2x" style="color:aliceblue;"></i>
+      </div>
+    </div>
+ 
+    <!-- Define the section for displaying the seek slider-->
+    <div class="slider_container">
+      <div class="current-time" style="color:aliceblue;">00:00</div>
+      <input type="range" min="1" max="100"
+        value="0" class="seek_slider" onchange="seekTo()">
+      <div class="total-duration" style="color:aliceblue;">00:00</div>
+    </div>
+ 
+    <!-- Define the section for displaying the volume slider-->
+    <div class="slider_container" style="color:aliceblue;">
+      <i class="fa fa-volume-down" style="color:aliceblue;"></i>
+      <input type="range" min="1" max="100"
+        value="99" class="volume_slider" onchange="setVolume()" style="color:aliceblue;">
+      <i class="fa fa-volume-up" style="color:aliceblue;"></i>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+ 
+  <!-- Load the main script for the player -->
+  <script src="main.js"></script>
+</body>
+</html>

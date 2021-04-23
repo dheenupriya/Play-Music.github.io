@@ -1,5 +1,4 @@
 
-
 #image{
     height: 50px;
     width: 60px;
@@ -8,7 +7,6 @@
 #font{
     font-family: Comic Sans MS;
     color: white;
-    
 }
 #song{
     height: 200px;
@@ -29,3 +27,8 @@
     position: relative;
     
 }
+.playall:hover{
+    box-shadow: none;
+    transform: scale(0.98) translateY(5px);
+    box-shadow: 0 15px 35px #70286aa1;
+  }
